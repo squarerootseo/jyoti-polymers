@@ -1,0 +1,49 @@
+{
+  "source": "https://jyotipolymers.com/",
+  "migratedAt": "2026-04-11T07:34:31.275Z",
+  "layout": "Layout",
+  "page": "index",
+  "components": [
+    {
+      "name": "Header",
+      "type": "layout",
+      "file": "src/components/Header.astro",
+      "originalId": null,
+      "originalClasses": [
+        "elementor",
+        "elementor-246",
+        "elementor-location-header"
+      ]
+    },
+    {
+      "name": "Navigation",
+      "type": "section",
+      "file": "src/components/Navigation.astro",
+      "originalId": null,
+      "originalClasses": [
+        "jet-mega-menu-container"
+      ]
+    },
+    {
+      "name": "Footer",
+      "type": "layout",
+      "file": "src/components/Footer.astro",
+      "originalId": null,
+      "originalClasses": [
+        "elementor",
+        "elementor-474",
+        "elementor-location-footer"
+      ]
+    }
+  ],
+  "stripped": {
+    "scripts": 32,
+    "styles": 0,
+    "elements": 12,
+    "attrs": 529
+  },
+  "css": {
+    "globalFile": "public/styles/global.css",
+    "sizeKB": "1013.1"
+  }
+}

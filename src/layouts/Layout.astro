@@ -1,0 +1,47 @@
+---
+// Layout.astro — Base layout
+// Migrated by SRS Astro Componentizer
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = "Jyoti Polymers is a leading protective packaging film manufacturer in India. We offers high-quality, durable films for industrial and commercial packaging needs.",
+  canonical,
+  ogImage,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  {canonical && <link rel="canonical" href={canonical} />}
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  {ogImage && <meta property="og:image" content={ogImage} />}
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <!-- Add font links here -->
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="/styles/global.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://jyotipolymers.com/wp-content/uploads/2026/02/cropped-Untitled-design-41-32x32.jpg" sizes="32x32" />
+</head>
+<body class="home page-template page-template-elementor_header_footer page page-id-83 jkit-color-scheme hello-elementor-default jet-mega-menu-location elementor-default elementor-template-full-width elementor-kit-101 elementor-page elementor-page-83 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit">
+  <slot />
+</body>
+</html>

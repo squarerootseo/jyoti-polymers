@@ -1,0 +1,68 @@
+/* Local font overrides — fixes CORS font loading issues when running on localhost */
+/* These @font-face declarations override the remote ones loaded from jyotipolymers.com */
+
+@font-face {
+  font-family: 'jkiticon';
+  src: url('/fonts/jkiticon.woff2') format('woff2'),
+       url('/fonts/jkiticon.woff') format('woff'),
+       url('/fonts/jkiticon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ekiticons';
+  src: url('/fonts/ekiticons.woff2') format('woff2'),
+       url('/fonts/ekiticons.woff') format('woff'),
+       url('/fonts/ekiticons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linearicons-Free';
+  src: url('/fonts/Linearicons-Free.woff2') format('woff2'),
+       url('/fonts/Linearicons-Free.woff') format('woff'),
+       url('/fonts/Linearicons-Free.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'eicons';
+  src: url('/fonts/eicons.woff2') format('woff2'),
+       url('/fonts/eicons.woff') format('woff'),
+       url('/fonts/eicons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('/fonts/fa-solid-900.woff2') format('woff2'),
+       url('/fonts/fa-solid-900.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('/fonts/fa-regular-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('/fonts/fa-brands-400.woff2') format('woff2'),
+       url('/fonts/fa-brands-400.ttf') format('truetype');
+}
