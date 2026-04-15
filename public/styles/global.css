@@ -4428,4 +4428,19 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   }
 }
 
+/* ===== GLOBAL: Remove underlines from all links, buttons, and menus ===== */
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited,
+button,
+.elementor-button,
+.elementor-icon-list-item a,
+.elementor-heading-title a,
+nav a,
+.jet-menu a,
+.menu-item a {
+  text-decoration: none !important;
+}
 
